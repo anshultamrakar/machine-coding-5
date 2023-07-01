@@ -8,19 +8,24 @@ import Modal from 'react-bootstrap/Modal';
 
 function App() {
   const [show, setShow] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <div>
-      <ul>
+      <ul className='recipe_items'>
         {recipes.map(item => (
           <li>
-            <h4>{item.name}</h4>
+            <img src = {item.url} width= "300" height = "300"/>
+            <h5>{item.name}</h5>
+            <p>Cuisine Type : {item.type}</p>
+            <p>Ingredients : <span>See All</span> </p>
+            <p>Instructions :  <span>See All</span> </p>
           </li>
         ))}
       </ul>
      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+       +
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header>
@@ -34,7 +39,7 @@ function App() {
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Add a recipe
           </Button>
         </Modal.Footer>
       </Modal>

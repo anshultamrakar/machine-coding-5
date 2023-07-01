@@ -1,7 +1,9 @@
 export const recipes = [
       {
         "name": "Spaghetti Bolognese",
-        "ingredients": [
+         "url" : "https://img.freepik.com/free-photo/lifestyle-food-pasta-yummy-gourmet_1350-50.jpg?size=626&ext=jpg&ga=GA1.1.701769884.1684604185&semt=ais",
+        "type" : "American",
+         "ingredients": [
           "250g spaghetti",
           "400g ground beef",
           "1 onion, chopped",
@@ -22,6 +24,8 @@ export const recipes = [
       },
       {
         "name": "Chicken Stir-Fry",
+        "type" : "Italy",
+        "url" : "https://img.freepik.com/free-photo/homemade-kung-pao-chicken-with-peppers-vegetables-chinese-food-stir-fry_2829-7179.jpg?size=626&ext=jpg&ga=GA1.2.701769884.1684604185&semt=ais",
         "ingredients": [
           "2 boneless, skinless chicken breasts, sliced",
           "1 bell pepper, sliced",
@@ -45,6 +49,8 @@ export const recipes = [
       },
       {
         "name": "Banana Bread",
+        "url" : "https://img.freepik.com/free-photo/front-view-delicious-sliced-cake-inside-plate-dark-surface-sweet-cake-biscuit-tea-pie-tea_140725-101421.jpg?size=626&ext=jpg&ga=GA1.1.701769884.1684604185&semt=ais",
+        "type" : "Indian ",
         "ingredients": [
           "2 cups all-purpose flour",
           "1 teaspoon baking soda",
